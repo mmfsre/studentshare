@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
+  
     <div class="scroll-down">
         <path d="M16 3C8.832031 3 3 8.832031 3 16s5.832031 13 13 13 13-5.832031 13-13S23.167969 3 16 3zm0 2c6.085938 0 11 4.914063 11 11 0 6.085938-4.914062 11-11 11-6.085937 0-11-4.914062-11-11C5 9.914063 9.914063 5 16 5zm-1 4v10.28125l-4-4-1.40625 1.4375L16 23.125l6.40625-6.40625L21 15.28125l-4 4V9z"/> 
     </div>
@@ -48,40 +49,7 @@
         <a href="https://drive.google.com/file/d/1wTPE4yHXzlRNRn48xNcxvCoTLvxfVhJa/view?usp=sharing" target="_blank" >Vizija</a>
         
       </nav>
-    <script>
-        "use strict";
-
-const body = document.querySelector("body");
-const modal = document.querySelector(".modal");
-const modalButton = document.querySelector(".modal-button");
-const closeButton = document.querySelector(".close-button");
-const scrollDown = document.querySelector(".scroll-down");
-let isOpened = false;
-
-const openModal = () => {
-  modal.classList.add("is-open");
-  body.style.overflow = "hidden";
-};
-
-const closeModal = () => {
-  modal.classList.remove("is-open");
-  body.style.overflow = "initial";
-};
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > window.innerHeight / 100 && !isOpened) {
-    isOpened = true;
-    scrollDown.style.display = "none";
-    openModal();
-  }
-});
-modalButton.addEventListener("click", openModal);
-closeButton.addEventListener("click", closeModal);
-
-document.onkeydown = evt => {
-  evt = evt || window.event;
-  evt.keyCode === 27 ? closeModal() : false;
-};
-    </script>
+      <script src="../JS/src.js">
+      </script>
 </body>
 </html>
