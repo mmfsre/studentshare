@@ -11,9 +11,7 @@ Korištene tehnologije:
 
 Autori:
 
-• Mihaela Martić
-
-• Dario Klarić
+• Mihaela Martić & Dario Klarić
 
 © 2022 
 
